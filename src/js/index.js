@@ -1,5 +1,3 @@
-function doSomething(message){
-    window.alert(`${message}`)
-}
+import { fetchDummies } from "./services/fetchData.js";
 
-doSomething('Cacetada')
+fetchDummies()
