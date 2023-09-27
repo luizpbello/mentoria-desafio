@@ -4,12 +4,15 @@ async function createUserCard(user) {
 
   const userImage = document.createElement("img");
   userImage.classList.add("user-image");
+  userImage.src = user.image
 
   const userName = document.createElement("span");
   userName.classList.add("user-name");
+  userName.textContent = user.firstName
 
   const userEmail = document.createElement("span");
   userEmail.classList.add("user-email");
+  userEmail.textContent = user.email
 
   userCard.appendChild(userImage);
   userCard.appendChild(userName);

@@ -5,7 +5,7 @@ async function fetchDummies() {
       throw new Error("Erro ao buscar usuários.");
     }
     const data = await response.json();
-    return data;
+    return data.users;
   } catch (error) {
     throw error;
   }

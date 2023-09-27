@@ -1,3 +1,3 @@
-import { fetchDummies } from "./services/fetchData.js";
+import { renderUsers } from "./services/renderUsers.js";
 
-fetchDummies()
+renderUsers();
