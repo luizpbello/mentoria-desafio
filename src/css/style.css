@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  box-shadow: 0px 2px 25px 0.9px black;
+  height: 80px;
+  place-content: center;
+  align-items: center;
+}
+
+.brand-title {
+  font-size: 24px;
+}
+
+main {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap:50px;
+    padding: 0px 10px;
+    justify-content: center;
+    width: 80%;
+}
+
+.user-card {
+  width: 200px;
+  height: 300px;
+  box-shadow: 0px 0px 18px 0.9px black;
+  border-radius: 12px;
+}
