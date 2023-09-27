@@ -8,11 +8,11 @@ async function createUserCard(user) {
 
   const userName = document.createElement("span");
   userName.classList.add("user-name");
-  userName.textContent = user.firstName
+  userName.textContent = `Name: ${user.firstName}`
 
   const userEmail = document.createElement("span");
   userEmail.classList.add("user-email");
-  userEmail.textContent = user.email
+  userEmail.textContent = `Email: ${user.email}`
 
   userCard.appendChild(userImage);
   userCard.appendChild(userName);
