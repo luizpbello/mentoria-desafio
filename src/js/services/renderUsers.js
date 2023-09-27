@@ -1,5 +1,6 @@
 import { createUserCard } from "./createCards.js";
 import { fetchDummies } from "./fetchData.js";
+import { createError } from "./createError.js";
 
 async function renderUsers() {
   const container = document.getElementById("user-list");
@@ -11,7 +12,8 @@ async function renderUsers() {
       container.appendChild(userCard);
     });
   } catch (error) {
-    console.log(error);
+    const fetchError = await createError(error)
+    container.appendChild(fetchError)
   }
 }
 

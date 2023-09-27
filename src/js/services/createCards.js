@@ -1,4 +1,4 @@
-async function createUserCard(user) {
+ function createUserCard(user) {
   const userCard = document.createElement("div");
   userCard.classList.add("user-card");
 
